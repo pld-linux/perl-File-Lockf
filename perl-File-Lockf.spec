@@ -24,7 +24,7 @@ call, without any bells or whistles getting in the way.
 
 %description -l pl
 File::lockf stanowi interfejs do wywo³ania systemowego lockf. Perl
-posiada wbudowan± obs³ugê lockf, ale nie wspiwra ona blokad
+posiada wbudowan± obs³ugê lockf, ale nie wspiera ona blokad
 sieciowych. Istniej± inne modu³y Perla do zak³adania blokad, ale ¿aden
 z nich nie posiada prostego, jasnego interfejsu do wywo³ania
 systemowego lockf bez ¿adnych dzwonków i gwizdków po drodze.
