@@ -5,11 +5,11 @@ Summary:	File::Lockf perl module
 Summary(pl):	Modu³ perla File::Lockf
 Name:		perl-File-Lockf
 Version:	0.20
-Release:	7
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -23,7 +23,8 @@ File::Lockf umo¿liwia korzystanie z wywo³ania systemowego lockf.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
@@ -37,8 +38,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{perl_sitearch}/File/lockf.pm
-%dir %{perl_sitearch}/auto/File/lockf
-%{perl_sitearch}/auto/File/lockf/lockf.bs
-%attr(755,root,root) %{perl_sitearch}/auto/File/lockf/lockf.so
+%{perl_vendorarch}/File/lockf.pm
+%dir %{perl_vendorarch}/auto/File/lockf
+%{perl_vendorarch}/auto/File/lockf/lockf.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/File/lockf/lockf.so
 %{_mandir}/man3/*
