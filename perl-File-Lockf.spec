@@ -1,12 +1,12 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	File
 %define	pnam	Lockf
-Summary:	File::Lockf perl module
-Summary(pl):	Modu³ perla File::Lockf
+Summary:	File::lockf - Perl module interface to the lockf system call
+Summary(pl):	File::lockf - interfejs perlowy do wywo³ania systemowego lockf
 Name:		perl-File-Lockf
 Version:	0.20
 Release:	8
-License:	GPL
+License:	GPL v1+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	b200cf22e08f12d678a1c83312ff4f5d
@@ -15,10 +15,19 @@ BuildRequires:	perl-devel >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-File::Lockf is a wrapper around the lockf system call.
+File-lockf is an interface to the lockf system call.  Perl supports
+the flock system call natively, but that does not acquire network
+locks. Perl also supports the fcntl system call, but that is somewhat
+ugly to use.  There are other locking modules available for Perl, but
+none of them provided a simple, clean interface to the lockf system
+call, without any bells or whistles getting in the way.
 
 %description -l pl
-File::Lockf umo¿liwia korzystanie z wywo³ania systemowego lockf.
+File::lockf stanowi interfejs do wywo³ania systemowego lockf. Perl
+posiada wbudowan± obs³ugê lockf, ale nie wspiwra ona blokad
+sieciowych. Istniej± inne modu³y Perla do zak³adania blokad, ale ¿aden
+z nich nie posiada prostego, jasnego interfejsu do wywo³ania
+systemowego lockf bez ¿adnych dzwonków i gwizdków po drodze.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
