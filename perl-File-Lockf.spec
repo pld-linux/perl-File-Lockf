@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	File
 %define	pnam	Lockf
-%include	/usr/lib/rpm/macros.perl
 Summary:	File-Lockf perl module
 Summary(pl):	Modu³ perla File-Lockf
 Name:		perl-File-Lockf
 Version:	0.20
-Release:	6
-
+Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -21,7 +20,7 @@ File-Lockf is a wrapper around the lockf system call.
 File-Lockf umo¿liwia korzystanie z wywo³ania systemowego lockf.
 
 %prep
-%setup -q -n File-Lockf-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
