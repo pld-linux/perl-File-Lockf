@@ -25,7 +25,7 @@ File::Lockf umo¿liwia korzystanie z wywo³ania systemowego lockf.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
