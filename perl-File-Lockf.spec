@@ -5,7 +5,7 @@ Summary:	File::Lockf perl module
 Summary(pl):	Modu³ perla File::Lockf
 Name:		perl-File-Lockf
 Version:	0.20
-Release:	7
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
