@@ -3,7 +3,7 @@ Summary:	File-Lockf perl module
 Summary(pl):	Modu³ perla File-Lockf
 Name:		perl-File-Lockf
 Version:	0.20
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
