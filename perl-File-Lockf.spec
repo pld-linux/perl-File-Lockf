@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	File
-%define	pnam	Lockf
+%define		pdir	File
+%define		pnam	Lockf
 Summary:	File::lockf - Perl module interface to the lockf system call
 Summary(pl):	File::lockf - interfejs perlowy do wywo³ania systemowego lockf
 Name:		perl-File-Lockf
