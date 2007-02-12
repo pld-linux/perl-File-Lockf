@@ -2,7 +2,7 @@
 %define		pdir	File
 %define		pnam	Lockf
 Summary:	File::lockf - Perl module interface to the lockf system call
-Summary(pl):	File::lockf - interfejs perlowy do wywo≥ania systemowego lockf
+Summary(pl.UTF-8):   File::lockf - interfejs perlowy do wywo≈Çania systemowego lockf
 Name:		perl-File-Lockf
 Version:	0.20
 Release:	9
@@ -22,12 +22,12 @@ ugly to use.  There are other locking modules available for Perl, but
 none of them provided a simple, clean interface to the lockf system
 call, without any bells or whistles getting in the way.
 
-%description -l pl
-File::lockf stanowi interfejs do wywo≥ania systemowego lockf. Perl
-posiada wbudowan± obs≥ugÍ lockf, ale nie wspiera ona blokad
-sieciowych. Istniej± inne modu≥y Perla do zak≥adania blokad, ale øaden
-z nich nie posiada prostego, jasnego interfejsu do wywo≥ania
-systemowego lockf bez øadnych dzwonkÛw i gwizdkÛw po drodze.
+%description -l pl.UTF-8
+File::lockf stanowi interfejs do wywo≈Çania systemowego lockf. Perl
+posiada wbudowanƒÖ obs≈Çugƒô lockf, ale nie wspiera ona blokad
+sieciowych. IstniejƒÖ inne modu≈Çy Perla do zak≈Çadania blokad, ale ≈ºaden
+z nich nie posiada prostego, jasnego interfejsu do wywo≈Çania
+systemowego lockf bez ≈ºadnych dzwonk√≥w i gwizdk√≥w po drodze.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
