@@ -2,7 +2,7 @@
 %define		pdir	File
 %define		pnam	Lockf
 Summary:	File::lockf - Perl module interface to the lockf system call
-Summary(pl.UTF-8):   File::lockf - interfejs perlowy do wywołania systemowego lockf
+Summary(pl.UTF-8):	File::lockf - interfejs perlowy do wywołania systemowego lockf
 Name:		perl-File-Lockf
 Version:	0.20
 Release:	9
