@@ -36,6 +36,7 @@ systemowego lockf bez żadnych dzwonków i gwizdków po drodze.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %install
