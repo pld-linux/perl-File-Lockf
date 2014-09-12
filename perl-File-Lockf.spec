@@ -54,6 +54,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc README
 %{perl_vendorarch}/File/lockf.pm
 %dir %{perl_vendorarch}/auto/File/lockf
-%{perl_vendorarch}/auto/File/lockf/lockf.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/File/lockf/lockf.so
 %{_mandir}/man3/*
