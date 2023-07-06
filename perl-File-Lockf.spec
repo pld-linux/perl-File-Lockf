@@ -4,7 +4,7 @@ Summary:	File::lockf - Perl module interface to the lockf system call
 Summary(pl.UTF-8):	File::lockf - interfejs perlowy do wywołania systemowego lockf
 Name:		perl-File-Lockf
 Version:	0.25
-Release:	5
+Release:	6
 License:	GPL v1+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/File/%{pdir}-%{pnam}-%{version}.tar.gz
